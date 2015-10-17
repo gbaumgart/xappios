@@ -1,0 +1,46 @@
+<appSettings v="2">
+
+    <baseConfig>
+        
+        
+        <www>http://germany.buzzoffbase.com/</www>
+        <imageServletUrl>http://www.pearls-media.com/CMDataX/servlets/ImageScaleIcon?src=</imageServletUrl>
+        <cmMaster>http://www.pearls-media.com/CMDataX/</cmMaster>
+        <cmMasterDevelopment>http://www.xapp-studio.com/XApp-portlet/client?action=</cmMasterDevelopment>
+        
+        <appIdentifier>buzz</appIdentifier>
+        <imgWebRoot>http://germany.buzzoffbase.com/</imgWebRoot>
+
+        <imgWebRootLocations>http://germany.buzzoffbase.com/</imgWebRootLocations>
+
+        <articleRootUrl>http://www.ibiza.travel</articleRootUrl>
+        <masterSourceRoot>http://www.ibiza-pearls.com/IEventsServer/</masterSourceRoot>
+        
+        <slaveSourceRoot>http://www.pearls-media.com/IEventsServer/</slaveSourceRoot>
+        <slaveImageRoot>http://germany.buzzoffbase.com/</slaveImageRoot>
+        
+        
+        <facebookSecret>9c8b4dce51252f925401e665585f4ab8</facebookSecret>
+        <facebookKey>217490055004045</facebookKey>
+        
+        <twitterSecret>iD716nZPVfweb9ShZfaOI6Qxy9BUteerQnbLpJDNlI</twitterSecret>
+        <twitterKey>clpfrea3akYLFSCf1RdzQ</twitterKey>
+        <googleTrackingCode>UA-28149685-1</googleTrackingCode>
+        
+        <dbName>ibiza</dbName>
+        <shareName>BuzzOffBase</shareName>
+        <shareRootUrl>http://germany.buzzoffbase.com/</shareRootUrl>
+
+        <videoSize>87</videoSize>
+        <locationSize>57</locationSize>
+        <mapSize>12</mapSize>
+        <hasClubTickets>1</hasClubTickets>
+        <hasSpecialOffers>1</hasSpecialOffers>
+        <fk>217490055004045</fk>
+        <fsec>9c8b4dce51252f925401e665585f4ab8</fsec>
+        <fu>109709119068460</fu>
+    <ft>AAADFzll4f40BAGnJeZCWUbRyJ0scxpMJmlRjYoO4rE6ZAcEaoJYPKsru1Ui3GTSif2h1HdC0T35dSLXUnQQkGOFx7PYr0ZD</ft>
+        
+    </baseConfig>
+    
+</appSettings>

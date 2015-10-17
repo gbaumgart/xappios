@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<!--
+ Licensed to the Apache Software Foundation (ASF) under one
+ or more contributor license agreements.  See the NOTICE file
+ distributed with this work for additional information
+ regarding copyright ownership.  The ASF licenses this file
+ to you under the Apache License, Version 2.0 (the
+ "License"); you may not use this file except in compliance
+ with the License.  You may obtain a copy of the License at
+ 
+ http://www.apache.org/licenses/LICENSE-2.0
+ 
+ Unless required by applicable law or agreed to in writing,
+ software distributed under the License is distributed on an
+ "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ KIND, either express or implied.  See the License for the
+ specific language governing permissions and limitations
+ under the License.
+ -->
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+        <title>Hello World</title>
+        
+        <link rel="stylesheet" type="text/css" href="http://192.168.1.37:8080/XApp-portlet/xasweb/lib/cssCommon/video-js.css" />
+        <link rel="stylesheet" type="text/css" href="http://192.168.1.37:8080/XApp-portlet/xasweb/lib/cssCommon/photoswipe.css" />
+        <link rel="stylesheet" type="text/css" href="http://192.168.1.37:8080/XApp-portlet/xasweb/lib/cssCommon/psstyles.css" />
+        <link rel="stylesheet" type="text/css" href="http://192.168.1.37:8080/XApp-portlet/xasweb/lib/cssMobile/commons.css" />
+        <link rel="stylesheet" type="text/css" href="http://192.168.1.37:8080/XApp-portlet/xasweb/lib/dojox/mobile/themes/iphone/iphone.css" />
+        <link rel="stylesheet" type="text/css" href="http://192.168.1.37:8080/XApp-portlet/xasweb/lib/cssMobile/themes/iphone/gallery.css" />
+        <link rel="stylesheet" type="text/css" href="http://192.168.1.37:8080/XApp-portlet/xasweb/lib/cssCommon/forms.css" />
+        <link rel="stylesheet" type="text/css" href="http://192.168.1.37:8080/XApp-portlet/xasweb/lib/cssCommon/mobileCommons.css" />
+        <link rel="stylesheet" type="text/css" href="http://192.168.1.37:8080/XApp-portlet/xasweb/lib/cssCommon/xappwebfix.css" />
+        <script type="text/javascript" charset="utf-8" src="http://192.168.1.37:8080/XApp-portlet/xasweb/lib/external/klass.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="http://192.168.1.37:8080/XApp-portlet/xasweb/lib/external/jshashtable.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="http://192.168.1.37:8080/XApp-portlet/xasweb/lib/external/qr/qrcode.js"></script>
+        <script type="text/javascript" charset="utf-8" src="http://192.168.1.37:8080/XApp-portlet/xasweb/lib/external/log4javascript.js"></script>
+        <script type="text/javascript" charset="utf-8" src="http://192.168.1.37:8080/XApp-portlet/xasweb/lib/external/stacktrace.js"></script>
+        <script type="text/javascript" charset="utf-8" src="http://192.168.1.37:8080/XApp-portlet/xasweb/lib/external/code.photoswipe-3.0.5.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="http://192.168.1.37:8080/XApp-portlet/xasweb/lib/external/cssParser.min.js"></script>
+        <script type="text/javascript" charset="utf-8" src="http://192.168.1.37:8080/XApp-portlet/xasweb/lib/external/soundmanager2.js"></script>
+        
+        
+        <script type="text/javascript">
+            function openFacebookShare() {
+                if (!hasFacebook) {
+                    ctx.getUrlHandler().openExternalLocation("http://www.facebook.com/sharer.php?u=http://www.Google.com");
+                } else {
+                    var title = xapp.utils.getShareTitle();
+                    var url = xapp.utils.getShareUrl();
+                    var pic = xapp.utils.getSharePicture();
+                    var text = xapp.utils.getShareDetailText();
+                    xapp.utils.openFacebookShare(title, url, null, pic, text);
+                }
+            };
+            function loginFB(appId) {
+                try {
+                    if (FB) {
+                        FB.init({ appId:fbAppId,
+                                status:true,
+                                cookie:true,
+                                xfbml:true,
+                                oauth:true});
+                        
+                        //FB.Event.subscribe('auth.statusChange', handleStatusChange);		            //};
+                    };
+                    
+                } catch (e) {
+                }
+                
+            }
+            function bootFacebook(fbAppId) {
+                //console.error("boot fb");
+                var e = document.createElement('script');
+                e.async = true;
+                e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+                document.getElementById('fb-root').appendChild(e);
+                setTimeout(function () {
+                           loginFB(fbAppId);
+                           }, 1000);
+            };
+            
+            function onSharePickerOpen() {
+                //console.error("on share picker open");
+                xapp.utils.onSharePickerOpen();
+            };
+            var rpcProxy = null;
+            var rpcProxyDomain = null;
+            var rpcProxyDomainPort = null;
+            var rpcProxyPrefix = null;
+            var dataHostUrl="http://192.168.1.37:8080/XApp-portlet/";
+            </script>
+        
+        <script type="text/javascript">
+            console.error('hava');
+            xappResources={
+                "class": "cmx.types.Resources",
+                "distDir": "%XASWEB%/%XLIB%/xapp",
+                "includes": [
+                
+                ],
+                "items": [
+                
+                ]
+            }
+            </script>
+        <script type="text/javascript">
+            
+            function openFacebookShare() {
+                //menu.hide(true);
+                
+                
+                if (!hasFacebook) {
+                    ctx.getUrlHandler().openExternalLocation("http://www.facebook.com/sharer.php?u=http://www.Google.com");
+                } else {
+                    var title = xapp.utils.getShareTitle();
+                    var url = xapp.utils.getShareUrl();
+                    var pic = xapp.utils.getSharePicture();
+                    var text = xapp.utils.getShareDetailText();
+                    xapp.utils.openFacebookShare(title, url, null, pic, text);
+                }
+            };
+            function loginFB(appId) {
+                
+                /*
+                 if (isConnected) {
+                 console.error("already connected fb, get users");
+                 //getUserFriends();
+                 return;
+                 }
+                 */
+                //console.error("login fb");
+                //window.fbAsyncInit = function() {
+                try {
+                    if (FB) {
+                        FB.init({ appId:fbAppId,
+                                status:true,
+                                cookie:true,
+                                xfbml:true,
+                                oauth:true});
+                        
+                        //FB.Event.subscribe('auth.statusChange', handleStatusChange);		            //};
+                    };
+                    
+                } catch (e) {
+                }
+                
+            }
+            function bootFacebook(fbAppId) {
+                //console.error("boot fb");
+                var e = document.createElement('script');
+                e.async = true;
+                e.src = document.location.protocol + '//connect.facebook.net/en_US/all.js';
+                document.getElementById('fb-root').appendChild(e);
+                setTimeout(function () {
+                           loginFB(fbAppId);
+                           }, 1000);
+            };
+            
+            function onSharePickerOpen() {
+                //console.error("on share picker open");
+                xapp.utils.onSharePickerOpen();
+            };
+            var rpcProxy = null;
+            var rpcProxyDomain = null;
+            var rpcProxyDomainPort = null;
+            var rpcProxyPrefix = null;
+            </script>
+        
+        
+        <script>
+            var applicationId ="myeventsappbf";
+            var uuid = "11166763-e89c-44ba-aba7-4e9f4fdf97a9";
+            var device = "IPHONE_NATIVE";
+            var isMaster = true;
+            window.isMaster = true;
+            var isLiferay=false;
+            var debug=true;
+            var ctx = null;
+            var sctx = null;
+            var cctx = null;
+            var log = null;
+            var hasFacebook=false;
+            var fbAppId = "null";
+            var device= "IPHONE_NATIVE";
+            var returnUrl= "";
+            var FB=null;
+            
+            var xappLoggingConfig={
+                level:"all",
+                targets:"",
+                logger:"xapp@192.168.1.37"
+            };
+            
+            
+            var forceDisplaySize=null;
+            
+            var rtConfig="debug";
+            
+            
+            forceDisplaySize=
+            {
+                width:320,
+                height:480
+            };
+            
+            
+            var forceLanguage="en";
+            
+            
+            
+            var smdPath="lib/cxapp/quiz.json";
+            var proxyHost="test.cooki.me";
+            
+            
+            
+            
+            </script>
+        
+    </head>
+    <body>
+
+        <script type="text/javascript" src="cordova.ios.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+        <script type="text/javascript" src="ChildBrowser.js"></script>
+        <script type="text/javascript">
+            app.initialize();
+            </script>
+        
+        <div id="root" data-dojo-attach-point='root' style="padding: 0px;overflow:hidden !important;visibility:visible;">
+        </div>
+        <div id="progDiv"></div>
+        <div id="fb-root"></div>
+        <div id="cacheDiv"></div>
+        
+        <div id="calPicker" data-dojo-type="dojox.mobile.Opener" style="z-index:2000">
+            <h1 dojoType="dojox.mobile.Heading" label="Date Picker">
+                <div dojoType="dojox.mobile.ToolBarButton" label="Done" class="mblColorBlue" style="position:absolute;width:45px;right:0;"
+                    onclick="dijit.registry.byId('calPicker').hide(true)"></div>
+                <div dojoType="dojox.mobile.ToolBarButton" label="Cancel" class="mblColorBlue" style="position:absolute;width:45px;left:0;"
+                    onclick="dijit.registry.byId('calPicker').hide(false)"></div>
+            </h1>
+            <div id="spin1" dojoType="dojox.mobile.SpinWheelDatePicker"></div>
+        </div>
+        
+
+
+        <div id="sharePicker" data-dojo-type="dojox.mobile.Opener" data-dojo-props="onShow:onSharePickerOpen">
+            <h1 dojoType="dojox.mobile.Heading" label="Share" class="header1" style="width:100%">
+                <div dojoType="dojox.mobile.ToolBarButton" label="Done" class="mblColorBlue" style="position:absolute;width:45px;right:0;"
+                    onclick="dijit.registry.byId('sharePicker').hide(true)"></div>
+                <div dojoType="dojox.mobile.ToolBarButton" label="Cancel" class="mblColorBlue" style="position:absolute;width:45px;left:0;"
+                    onclick="dijit.registry.byId('sharePicker').hide(true)"></div>
+            </h1>
+            
+            <div dojoType="dojox.mobile.ScrollableView" selected="true" height="auto">
+                <ul id="sharePickerList" dojoType="dojox.mobile.RoundRectList" select="single" data-dojo-props="">
+                    
+                </ul>
+            </div>
+        </div>
+        
+        
+        
+        <div id="sectionPicker" data-dojo-type="dojox.mobile.Opener" data-dojo-props="">
+            <h1 dojoType="dojox.mobile.Heading" label="Section" class="header1" style="width:100%" id="SectionHeadin">
+                <div dojoType="dojox.mobile.ToolBarButton" label="Done" class="mblColorBlue" style="position:absolute;width:45px;right:0;"
+                    onclick="dijit.registry.byId('sectionPicker').hide(true)"></div>
+                <div dojoType="dojox.mobile.ToolBarButton" label="Cancel" class="mblColorBlue" style="position:absolute;width:45px;left:0;"
+                    onclick="dijit.registry.byId('sectionPicker').hide(true)"></div>
+            </h1>
+            
+            <div dojoType="dojox.mobile.ScrollableView" selected="true" height="auto" id="sectionPickerRoot">
+                <ul id="sectionPickerList" dojoType="dojox.mobile.RoundRectList" select="single" data-dojo-props="">
+                </ul>
+            </div>
+        </div>
+        
+        
+        <script type="text/javascript" src="http://192.168.1.37:8080/XApp-portlet/xasweb/lib/dojo/dojo.js" djConfig="cacheBust:true,parseOnLoad:false,baseUrl:'http://192.168.1.37:8080/XApp-portlet/xasweb/lib/',tlmSiblingOfDojo: 0,isDebug:0,useCustomLogger:false,mblAlwaysHideAddressBar:false,async:true,mblThemeFiles:['@theme',['cssMobile','gallery']],has:{'dojo-undef-api': true,'dojo-firebug': false},locale:'en'"></script>
+        <script type="text/javascript" src="http://192.168.1.37:8080/XApp-portlet/xasweb/lib/xapp/run.js"></script>
+        
+    </body>
+</html>

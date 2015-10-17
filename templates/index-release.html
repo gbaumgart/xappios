@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height" />
+        <link rel="stylesheet" type="text/css" href="css/index.css" />
+
+        <title>Hello World</title>
+
+        %HEAD_0_INCLUDES%
+
+        %HEAD_JS_INCLUDES%
+
+        %HEAD_JS_VARIABLE_INCLUDES%
+
+
+        %HEAD_APP_RESOURCES%
+
+        %HEAD_CXAPP%
+
+        %XAPP_BUILD_OPTIONS%
+
+        %HEAD_DEBUGGER%
+
+
+
+        %CSS_KEYS%
+
+        <script type="text/javascript">
+
+            function cordovaDevReady(){
+                console.error("ondevice ready");
+                ctx.hybridDelegate.onDeviceReady();
+            }
+        </script>
+
+        
+        <script>
+            //%XAPP_CUSTOM_TYPES%
+            var device = "IPHONE_NATIVE";
+            var isMaster = true;
+            window.isMaster = true;
+            var isLiferay=false;
+            var debug=true;
+            var ctx = null;
+            var sctx = null;
+            var cctx = null;
+            var log = null;
+            var hasFacebook=false;
+            var fbAppId = "null";
+            var returnUrl= "";
+            var FB=null;
+
+            
+            var xappLoggingConfig={
+                level:"all",
+                targets:"",
+                logger:"xapp@192.168.1.37"
+            };
+            
+            
+            var forceDisplaySize=null;
+            var forceLanguage="en";
+            var smdPath="lib/cxapp/quiz.json";
+            var proxyHost="test.cooki.me";
+
+        </script>
+
+        <script type="text/javascript" src="%CORDOVA_FILE%"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+    </head>
+    <body>
+
+
+
+        <script type="text/javascript">
+            if(typeof  app!='undefined')
+            {
+                app.initialize();
+            }
+            </script>
+        
+        <div id="root" data-dojo-attach-point='root' style="padding: 0px;overflow:hidden !important;visibility:visible;">
+        </div>
+        <div id="progDiv"></div>
+        <div id="fb-root"></div>
+        <div id="cacheDiv"></div>
+        <!--div id="loadDiv" style="position:absolute;left:0px;top:0px;width:100%;height:100%;z-index:999;"><span></span></div-->
+        <div id="loadingWrapper" class="loadingWrapper">
+            <div class="loading">
+                <div class="outer"></div>
+                <div class="inner"></div>
+            </div>
+        </div>
+        
+        <div id="calPicker" data-dojo-type="dojox.mobile.Opener" style="z-index:2000">
+            <h1 dojoType="dojox.mobile.Heading" label="Date Picker">
+                <div dojoType="dojox.mobile.ToolBarButton" label="Done" class="mblColorBlue" style="position:absolute;width:45px;right:0;"
+                    onclick="dijit.registry.byId('calPicker').hide(true)"></div>
+                <div dojoType="dojox.mobile.ToolBarButton" label="Cancel" class="mblColorBlue" style="position:absolute;width:45px;left:0;"
+                    onclick="dijit.registry.byId('calPicker').hide(false)"></div>
+            </h1>
+            <div id="spin1" dojoType="dojox.mobile.SpinWheelDatePicker"></div>
+        </div>
+        
+
+
+        <div id="sharePicker" data-dojo-type="dojox.mobile.Opener" data-dojo-props="onShow:onSharePickerOpen">
+            <h1 dojoType="dojox.mobile.Heading" label="Share" class="header1" style="width:100%">
+                <div dojoType="dojox.mobile.ToolBarButton" label="Done" class="mblColorBlue" style="position:absolute;width:45px;right:0;"
+                    onclick="dijit.registry.byId('sharePicker').hide(true)"></div>
+                <div dojoType="dojox.mobile.ToolBarButton" label="Cancel" class="mblColorBlue" style="position:absolute;width:45px;left:0;"
+                    onclick="dijit.registry.byId('sharePicker').hide(true)"></div>
+            </h1>
+            
+            <div dojoType="dojox.mobile.ScrollableView" selected="true" height="auto">
+                <ul id="sharePickerList" dojoType="dojox.mobile.RoundRectList" select="single" data-dojo-props="">
+                    
+                </ul>
+            </div>
+        </div>
+        
+        
+        
+        <div id="sectionPicker" data-dojo-type="dojox.mobile.Opener" data-dojo-props="">
+            <h1 dojoType="dojox.mobile.Heading" label="Section" class="header1" style="width:100%" id="SectionHeadin">
+                <div dojoType="dojox.mobile.ToolBarButton" label="Done" class="mblColorBlue" style="position:absolute;width:45px;right:0;"
+                    onclick="dijit.registry.byId('sectionPicker').hide(true)"></div>
+                <div dojoType="dojox.mobile.ToolBarButton" label="Cancel" class="mblColorBlue" style="position:absolute;width:45px;left:0;"
+                    onclick="dijit.registry.byId('sectionPicker').hide(true)"></div>
+            </h1>
+            
+            <div dojoType="dojox.mobile.ScrollableView" selected="true" height="auto" id="sectionPickerRoot">
+                <ul id="sectionPickerList" dojoType="dojox.mobile.RoundRectList" select="single" data-dojo-props="">
+                </ul>
+            </div>
+        </div>
+
+        <div id="dlg_dummy_radio" style="z-index:100"
+             data-dojo-type="dojox.mobile.SimpleDialog"
+             data-dojo-mixins="dojox.mobile._ContentPaneMixin"
+             data-dojo-props='href:"./radioDialog.html"'></div>
+
+
+        %DOJO_PATH_AND_CONFIG%
+        %DOJO_BOOT_LOADER%
+    </body>
+</html>

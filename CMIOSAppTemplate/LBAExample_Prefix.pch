@@ -1,0 +1,29 @@
+#ifdef __OBJC__
+
+    #import <Foundation/Foundation.h>
+    #import <UIKit/UIKit.h>
+
+#define CM_VERSION @"2"
+
+
+#define IS_DEBUG 1
+
+//#define xxprotection 1
+#ifdef xxprotection
+    #import "AntiCrack.h"
+#endif
+
+#endif
+//#import "CommonTypes.h"
+
+
+
+/*#else  
+// DEBUG not defined:
+
+#define RMLog(args...)    // do nothing.
+#define LogMethod() 
+#define WarnDeprecated() 
+#define NS_BLOCK_ASSERTIONS 1
+#endif
+*/

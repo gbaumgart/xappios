@@ -1,0 +1,48 @@
+2012-11-29 20:19:25.802 xappios[59234:15b03] Multi-tasking -> Device: YES, App: YES
+2012-11-29 20:19:26.408 xappios[59234:15b03] [ERROR] checking for custom app boot
+2012-11-29 20:19:27.825 xappios[59234:15b03] [INFO] init logging2
+2012-11-29 20:19:27.825 xappios[59234:15b03] [INFO] {"0":"going into main : file:///Users/admin/Library/Application%20Support/iPhone%20Simulator/6.1/Applications/3C53545F-765D-469B-AA29-E399527E01B6/xappios.app/www/index.html"}
+2012-11-29 20:19:27.830 xappios[59234:15b03] [INFO] {"0":"creating xapp managers"}
+2012-11-29 20:19:29.333 xappios[59234:15b03] [INFO] {"0":"run init code"}
+2012-11-29 20:19:29.333 xappios[59234:15b03] [INFO] {"0":"init xapp application : 11166763-e89c-44ba-aba7-4e9f4fdf97a9@myeventsappbf"}
+2012-11-29 20:19:29.334 xappios[59234:15b03] [INFO] {"0":"load service settings ::"}
+2012-11-29 20:19:29.336 xappios[59234:15b03] [INFO] loading service settings from http://192.168.1.37:8080/XApp-portlet/
+2012-11-29 20:19:29.337 xappios[59234:15b03] [INFO] loading service settings from http://192.168.1.37:8080/XApp-portlet/client?action=getServiceSettings
+2012-11-29 20:19:29.338 xappios[59234:15b03] [INFO] load data from http://192.168.1.37:8080/XApp-portlet/client?action=getServiceSettings
+2012-11-29 20:19:29.343 xappios[59234:15b03] [INFO] {"0":"load service settings after"}
+2012-11-29 20:19:29.343 xappios[59234:15b03] [INFO] {"0":"is mobile : true is tablet false w: 320 h: 460"}
+2012-11-29 20:19:29.345 xappios[59234:15b03] [INFO] {"0":"fixing root size"}
+2012-11-29 20:19:29.347 xappios[59234:15b03] [INFO] {"0":"trying to hide adressbar"}
+2012-11-29 20:19:29.353 xappios[59234:15b03] [INFO] {"0":"got service settings"}
+2012-11-29 20:19:29.353 xappios[59234:15b03] [INFO] {"0":"load appInfo"}
+2012-11-29 20:19:29.354 xappios[59234:15b03] [INFO] load data from http://192.168.1.37:8080/XApp-portlet//client?action=getApplication&uuid=11166763-e89c-44ba-aba7-4e9f4fdf97a9&appIdentifier=myeventsappbf
+2012-11-29 20:19:29.912 xappios[59234:15b03] [INFO] {"0":"app info ready: isValid true"}
+2012-11-29 20:19:29.912 xappios[59234:15b03] [INFO] {"0":"app info ready: data {\"appSettings\":{\"appIdentifier\":\"qxevents\",\"appName\":\"Ibiza Media\",\"bannerDelay\":-1,\"class\":\"pmedia."}
+2012-11-29 20:19:29.913 xappios[59234:15b03] [INFO] {"0":"app: page dummy call"}
+2012-11-29 20:19:29.920 xappios[59234:15b03] [INFO] {"0":"init managers"}
+2012-11-29 20:19:29.922 xappios[59234:15b03] [INFO] {"0":"loading styles"}
+2012-11-29 20:19:29.923 xappios[59234:15b03] [INFO] load data from http://192.168.1.37:8080/XApp-portlet//client?action=getStyles&platform=IPHONE_NATIVE
+2012-11-29 20:19:29.953 xappios[59234:15b03] [INFO] {"0":"app:build from store : [object Object]"}
+2012-11-29 20:19:29.977 xappios[59234:15b03] [ERROR] have no back button
+2012-11-29 20:19:38.295 xappios[59234:15b03] [ERROR] open url tt://events/1
+2012-11-29 20:19:38.296 xappios[59234:15b03] [INFO] load data from http://192.168.1.37:8080/XApp-portlet//events?action=list&cat=1
+2012-11-29 20:19:41.000 xappios[59234:15b03] [ERROR] open url tt://contentCategory/60803
+2012-11-29 20:19:41.000 xappios[59234:15b03] [INFO] load data from http://192.168.1.37:8080/XApp-portlet//content?action=list&refId=60803
+2012-11-29 20:19:42.094 xappios[59234:15b03] [ERROR] open url tt://dsUrl/Liferay/31/60805/0
+2012-11-29 20:19:42.106 xappios[59234:15b03] [INFO] load data from http://192.168.1.37:8080/XApp-portlet//content?action=detail&refId=60805&cType=31&dataSource=Liferay&uuid=11166763-e89c-44ba-aba7-4e9f4fdf97a9&appIdentifier=myeventsappbf
+2012-11-29 20:19:44.087 xappios[59234:15b03] [ERROR] open url tt://pictureGallery/11166763-e89c-44ba-aba7-4e9f4fdf97a9/myeventsappbf/Liferay/31/60805/0
+2012-11-29 20:19:44.087 xappios[59234:15b03] [INFO] load data from http://192.168.1.37:8080/XApp-portlet//content?action=detail&refId=60805&cType=31&dataSource=Liferay&uuid=11166763-e89c-44ba-aba7-4e9f4fdf97a9&appIdentifier=myeventsappbf
+2012-11-29 20:20:36.473 xappios[59234:15b03] [ERROR] open url tt://dsUrl/63b4835f-5a82-408e-b10d-b1c567593a0f/58/aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZmVlZHMvZGVmYXVsdC9wcml2YXRlL2Z1bGwvZm9sZGVyJTNBMEI2TXZya1VxYUVXS1p6QXRkVk5GTTJkRk9FMA==/0
+2012-11-29 20:20:36.474 xappios[59234:15b03] [INFO] load data from http://192.168.1.37:8080/XApp-portlet//google?action=folder&ref=aHR0cHM6Ly9kb2NzLmdvb2dsZS5jb20vZmVlZHMvZGVmYXVsdC9wcml2YXRlL2Z1bGwvZm9sZGVyJTNBMEI2TXZya1VxYUVXS1p6QXRkVk5GTTJkRk9FMA==&dataSource=63b4835f-5a82-408e-b10d-b1c567593a0f&uuid=11166763-e89c-44ba-aba7-4e9f4fdf97a9&appIdentifier=myeventsappbf
+2012-11-29 20:20:40.639 xappios[59234:15b03] [ERROR] open url tt://articleCategory/177
+2012-11-29 20:20:40.639 xappios[59234:15b03] [INFO] load data from http://192.168.1.37:8080/XApp-portlet//articles?action=list&refId=177
+2012-11-29 20:20:40.654 xappios[59234:15b03] [ERROR] error JSON.stringify()ing argument: TypeError: JSON.stringify cannot serialize cyclic structures.
+2012-11-29 20:20:45.058 xappios[59234:15b03] [ERROR] open url tt://contentCategory/60803
+2012-11-29 20:20:45.059 xappios[59234:15b03] [INFO] load data from http://192.168.1.37:8080/XApp-portlet//content?action=list&refId=60803
+2012-11-29 20:20:46.135 xappios[59234:15b03] [ERROR] open url tt://dsUrl/Liferay/31/60805/0
+2012-11-29 20:20:46.147 xappios[59234:15b03] [INFO] load data from http://192.168.1.37:8080/XApp-portlet//content?action=detail&refId=60805&cType=31&dataSource=Liferay&uuid=11166763-e89c-44ba-aba7-4e9f4fdf97a9&appIdentifier=myeventsappbf
+2012-11-29 20:20:52.811 xappios[59234:15b03] [ERROR] open url tt://events/1
+2012-11-29 20:20:52.812 xappios[59234:15b03] [INFO] load data from http://192.168.1.37:8080/XApp-portlet//events?action=list&cat=1
+2012-11-29 20:20:58.219 xappios[59234:15b03] [ERROR] open url tt://picassaAlbum/5694945332330615393
+2012-11-29 20:20:58.219 xappios[59234:15b03] [INFO] load data from http://192.168.1.37:8080/XApp-portlet//google?action=album&ref=5694945332330615393
+Terminating in response to SpringBoard's termination.

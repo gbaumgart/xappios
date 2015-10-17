@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>E5945A47-36BE-4883-BA99-CFC3DB1DC084</string>
+	<key>IDESourceControlProjectName</key>
+	<string>CMIOSApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>6F6408EC-6305-4077-921C-EA8802F39815</key>
+		<string>https://s15355725.pearls-media.com:8443/svn/development/trunk/Code/xappios</string>
+		<key>E627594B-E78A-41C0-9ABE-726002752EC8</key>
+		<string>https://s15355725.pearls-media.com:8443/svn/development/trunk/Code/server/xasweb/docroot/images/menu</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>CMIOSAppTemplate/CMIOSApp.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6F6408EC-6305-4077-921C-EA8802F39815</key>
+		<string>../../..</string>
+		<key>E627594B-E78A-41C0-9ABE-726002752EC8</key>
+		<string>../../www/images/menu</string>
+	</dict>
+	<key>IDESourceControlProjectRepositoryRootDictionary</key>
+	<dict>
+		<key>6F6408EC-6305-4077-921C-EA8802F39815</key>
+		<string>https://s15355725.pearls-media.com:8443/svn/development</string>
+		<key>E627594B-E78A-41C0-9ABE-726002752EC8</key>
+		<string>https://s15355725.pearls-media.com:8443/svn/development</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://s15355725.pearls-media.com:8443/svn/development/trunk/Code/xappios/CMIOSAppTemplate/CMIOSApp.xcodeproj</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>6F6408EC-6305-4077-921C-EA8802F39815</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E627594B-E78A-41C0-9ABE-726002752EC8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>menu</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.subversion</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6F6408EC-6305-4077-921C-EA8802F39815</string>
+			<key>IDESourceControlWCCName</key>
+			<string>xappios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
